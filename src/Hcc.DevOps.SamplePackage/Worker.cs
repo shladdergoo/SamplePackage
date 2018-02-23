@@ -8,5 +8,10 @@ namespace Hcc.DevOps.SamplePackage
         {
             return "foo";
         }
+
+        public string MoreWork()
+        {
+            return "bar";
+        }
     }
 }
