@@ -12,6 +12,18 @@
                 "reveal": "silent"
             },
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet test",
+            "args": [
+                "${workspaceRoot}/test/Hcc.DevOps.SamplePackage.Test/Hcc.DevOps.SamplePackage.Test.csproj"
+            ],
+            "type": "shell",
+            "group": "test",
+            "presentation": {
+                "reveal": "silent"
+            }
         }
     ]
 }
