@@ -6,7 +6,7 @@ namespace Hcc.DevOps.SamplePackage
     {
         public string DoWork()
         {
-            return "Foo";
+            return "Foo1";
         }
     }
 }
