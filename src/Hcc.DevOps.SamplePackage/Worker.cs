@@ -13,5 +13,10 @@ namespace Hcc.DevOps.SamplePackage
         {
             return "Bar";
         }
+
+        public string EvenMoreWork()
+        {
+            return "Bundy";
+        }
     }
 }

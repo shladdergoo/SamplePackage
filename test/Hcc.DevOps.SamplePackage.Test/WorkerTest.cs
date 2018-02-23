@@ -23,5 +23,13 @@ namespace Hcc.DevOps.SamplePackage.Test
 
             Assert.NotNull(worker.MoreWork());
         }
+
+        [Fact]
+        public void EvenMoreWork_Returns()
+        {
+            Worker worker = new Worker();
+
+            Assert.NotNull(worker.EvenMoreWork());
+        }
     }
 }
