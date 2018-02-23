@@ -13,7 +13,7 @@ namespace Hcc.DevOps.SamplePackage.Test
         {
             Worker worker = new Worker();
 
-            Assert.Equal("foo", worker.DoWork());
+            Assert.NotNull(worker.DoWork());
         }
     }
 }
