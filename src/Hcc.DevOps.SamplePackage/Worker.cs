@@ -11,7 +11,7 @@ namespace Hcc.DevOps.SamplePackage
 
         public string MoreWork()
         {
-            return "bar";
+            return "Bar";
         }
     }
 }
