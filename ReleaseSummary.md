@@ -1,5 +1,5 @@
 |Service|Tag|
-|---|---|
+|:---|:---|
 |apigate_tyk_gateway|1.1.9|
 |appsett_manageomappsettingssvc|1.1.10|
 |appsett_omappsettingsquerysvc|1.1.10|
