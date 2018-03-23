@@ -1,25 +1,48 @@
-# Release Summary
-
-VSTS Task Group using inline PowerShell scripts.
-
-Used to set the build number based on values found in the project source in conjunction with a user-managed revision number to give greater control over the final build number.
-
-Reads a major/minor version from a csproj file (or other XML file), and a revision number from a build definition variable, updates the build number for the current build with these values and then increments the revision number.
-
-## Installation
-
-Import the json file using the VSTS UI.
-
-## Usage
-
-The task group expects a build definition variable called 'buildRevision'. This should be created with a value of, say, 0. This value will increment by 1 each time the build defintion executes the task group.
-
-The task group has 3 parameters:
-
-- versionProjectPath: The filepath to the csproj (or other XML) file containing a major/minor version for use in the generated build number. E.g. $(System.DefaultWorkingDirectory)/src/Hcc.DevOps.SamplePackage/Hcc.DevOps.SamplePackage.csproj
-- versionElement: The path to the xml node whose value contains the major/minor version. Defaults to Project.PropertyGroup.AssemblyVersion
-- buildRevision: The build variable used to store the current revision number for the build defintion. Defaults to $(buildRevision). If a different variable is used then additional changes will be required in the inline scripts for the 2 tasks.
-
-The build definition should set 'Allow Scripts to Access OAuth Token'.
-
-Updating the build number requires the build service account to have Edit Build Definition permissions for the current build definition.
+|Service|Tag|
+|---|---|
+|apigate_tyk_gateway|1.1.9|
+|appsett_manageomappsettingssvc|1.1.10|
+|appsett_omappsettingsquerysvc|1.1.10|
+|asismgt_corsysappsanalysisquerysvc|1.1.37|
+|asismgt_corsysappsmanageanalysissvc|1.1.37|
+|asismgt_corsysappsverdictmsvc|1.1.37|
+|asismgt_mongo-migrate-analysis|branch-1.1|
+|bi_corsys_dashboard_api|1.1.00003|
+|caseman_caseidgenerator|1.1.68|
+|caseman_casemanagementautocompletesvc|1.1.68|
+|caseman_casequerysvc|1.1.68|
+|caseman_corsyscasemanagementriskassociationmsvc|1.1.68|
+|caseman_corsysservicescasehistorymsvc|1.1.68|
+|caseman_createcasemsvc|1.1.68|
+|caseman_managecasesvc|1.1.68|
+|caseman_mongo-migrate-case|branch-1.1|
+|fileman_corsysappsfilesquerysvc|1.1.16|
+|fileman_corsysappsmanagefilesvc|1.1.16|
+|platadm_appsquerysvc|1.1.30|
+|platadm_devicesquerysvc|1.1.30|
+|platadm_gensettingsquerysvc|1.1.30|
+|platadm_locationsquerysvc|1.1.30|
+|platadm_manageappssvc|1.1.30|
+|platadm_managedevicessvc|1.1.30|
+|platadm_managelocationssvc|1.1.30|
+|platadm_managerolesvc|1.1.30|
+|platadm_managesettingssvc|1.1.30|
+|platadm_manageusersvc|1.1.30|
+|platadm_rolesquerysvc|1.1.30|
+|platadm_usersquerysvc|1.1.30|
+|plataud_corsysplatformaudit|1.1.6|
+|platcon_corsysplatformconfigquerysrv|1.1.8|
+|platlog_corsysplatformlogging|1.1.6|
+|platmon_corsysplatformmonetisation|1.1.13|
+|prereq_rabbit|1.0|
+|prereq_rabbit1|1.0|
+|prereq_rabbit2 |1.0|
+|prereq_redis|3.2|
+|scanman_corsysappsscanassociatemsvc|1.1.31|
+|scanman_corsysappsscanuploadsvc|1.1.31|
+|scanman_mongo-migrate-scan|branch-1.1|
+|ucp-agent-win|2.2.5|
+|ucp-agent-s390x|2.2.5|
+|ucp-agent|2.2.5|
+|webui_metadataquerysvc|latest|
+|webui_web-ui-new|1.1.54|
